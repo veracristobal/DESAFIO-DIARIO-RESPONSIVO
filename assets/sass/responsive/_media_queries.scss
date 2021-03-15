@@ -1,0 +1,70 @@
+//MEDIA QUERIE MOBILE
+@media only screen and (min-width: 1px) and (max-width: 768px){
+    
+    .grid-container{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.1fr repeat(6, 1fr) 0.4fr ;
+        gap: 0px 0px;
+        grid-column-gap: 1rem;
+        grid-row-gap: 0px;
+        grid-template-areas: "navigation "
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "contact";
+                            
+    }
+        //ELEMENTOS QUE DESAPARECEN
+     .listado-derecho, .footer, .list-item-1 {
+        display: none;
+    }
+
+    //CAMBIOS DE NAV
+    .navigation__list, .navigation__logo {
+        margin: 0;
+        padding: 0;
+        
+        .navigation__list {
+            float: none;
+            margin-left:auto;
+        }
+    }
+    //CAMBIOS DE MAIN
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        height: fit-content;
+        grid-gap: 1rem;
+        margin: 0;
+    }
+   
+
+    .main__noticia {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+//MEDIA QUERIE MEDIUM DEVICES
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: fit-content;
+        grid-gap: 1rem;
+    }
+}

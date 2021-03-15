@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $gris;
+
+    .contact__title{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .contact__paragraph {
+        font-size: $small;
+    }
+
+    .input {
+        border: none ;
+        font-size: $regular;
+        max-width: 15rem;
+    }
+    .input-button{
+        border: none;
+        font-size: $regular;
+        background-color: orangered;
+        color: white;
+    }
+}

@@ -1,0 +1,48 @@
+//GRILLA PARA TODO EL LAYOUT
+.grid-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.4fr 0.1fr;
+    gap: 0px 0px;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0px;
+    grid-template-areas: "navigation navigation navigation navigation"
+                         "main main main listado-derecho"
+                         "main main main listado-derecho"
+                         "contact contact contact contact "
+                         "footer footer footer footer";
+}
+
+//UBICACION NAV
+.navigation {
+    grid-area: navigation;
+}
+
+//UBICACION MAIN Y GRILLA INSIDE MAIN
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: fit-content;
+    grid-gap: 1rem;
+    
+}
+
+
+
+//UBICACION DIV DERECHO
+.listado-derecho{
+    grid-area: listado-derecho;
+}
+
+//UBICACION CONTACT
+.contact {
+    grid-area: contact;
+}
+
+.footer{
+    grid-area: footer;
+}
